@@ -37,10 +37,6 @@ esphome:
   on_shutdown:
     - light.turn_off: rgb_light
 
-dashboard_import:
-  package_import_url: github://ApolloAutomation/PLT-1/Integrations/ESPHome/PLT-1_Minimal.yaml
-  import_full_config: false
-
 improv_serial:
 
 esp32_improv:
@@ -73,6 +69,7 @@ wifi:
     ssid: "Apollo PLT1 Hotspot"
 
 logger:
+  level: none
 
 packages:
   core: !include Core.yaml
