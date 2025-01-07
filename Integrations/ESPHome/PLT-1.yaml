@@ -37,27 +37,27 @@ esphome:
   on_shutdown:
     - light.turn_off: rgb_light
 
-improv_serial:
+#improv_serial:
 
-esp32_improv:
-  authorizer: none
+#esp32_improv:
+#  authorizer: none
 
 ota:
   - platform: esphome
     id: ota_esphome
-  - platform: http_request
-    id: ota_managed
+#  - platform: http_request
+#    id: ota_managed
 
 http_request:
   verify_ssl: true
 
 safe_mode:
 
-update:
-  - platform: http_request
-    id: firmware_update
-    name: Firmware Update
-    source: https://apolloautomation.github.io/PLT-1/firmware/manifest.json
+#update:
+#  - platform: http_request
+#    id: firmware_update
+#    name: Firmware Update
+#    source: https://apolloautomation.github.io/PLT-1/firmware/manifest.json
 
 wifi:
   on_connect:
